@@ -6,11 +6,11 @@
 body {
   background: #8B95C9;
   background: linear-gradient(to right, #AA4586, #6A3937);
-  font-family: 'Varela Round', sans-serif;
+  font-family: 'Varela Round', sans-serif !important;
 }
 
 h1 {
-  padding-top: 2.5rem;
+  padding: 2.5rem;
   text-align: center;
   font-family: 'Lato', sans-serif !important;
   color: #FDFFFC;
