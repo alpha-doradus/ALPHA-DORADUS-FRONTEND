@@ -18,15 +18,15 @@ const app = express();
 app.use(express.static("public"));
 app.set("view engine", "ejs");
 app.use(bodyParser.urlencoded({extended: true}));
+//
+// const userSchema = {
+//   fullname: String,
+//   age: String,
+//   email: String,
+//   user_name: String
+// };
 
-const userSchema = {
-  fullname: String,
-  age: String,
-  email: String,
-  user_name: String
-};
-
-const User = mongoose.model("User", userSchema);
+// const User = mongoose.model("User", userSchema);
 
 app.get("/", function(req, res){
   res.render("home");
@@ -44,18 +44,18 @@ app.get("/app", function(req, res){
   res.render("app");
 });
 
-app.post("/newuser", function(req, res){
+app.post("/register", function(req, res){
 
-  const user = new User ({
-    fullname: req.body.fullname,
-    age: req.body.age,
-    email: req.body.email,
-    user_name: req.body.userName
-  });
+  // const user = new User ({
+  //   fullname: req.body.fullname,
+  //   age: req.body.age,
+  //   email: req.body.email,
+  //   user_name: req.body.userName
+  // });
 
   user.save();
 
-  res.redirect("/");
+  res.redirect("/user");
 
 });
 
