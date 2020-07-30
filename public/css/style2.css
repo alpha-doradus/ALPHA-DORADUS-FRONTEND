@@ -4,7 +4,9 @@
 }
 
 body {
-  background: linear-gradient(to right, #AA4586, #6A3937);
+  background-image:url('https://media.giphy.com/media/3owyoXMzSPGjbsQ5uE/giphy.gif');
+  background-repeat:repeat;
+  background-size: cover;
   font-family: 'Varela Round', sans-serif;
 }
 
@@ -12,15 +14,20 @@ h1 {
   padding-top: 2.5rem;
   text-align: center;
   font-family: 'Lato', sans-serif !important;
-  color: #FDFFFC;
+  color: #020034;
 }
 
 .footer {
-  color: #FDFFFC;
+  color: #020034;
+}
+
+.slogan {
+  background: #FDFFFC;
 }
 
 a {
   text-decoration: none;
+  transition: 0.3s;
 }
 
 a:hover, :active{
